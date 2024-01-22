@@ -22,6 +22,8 @@ Matrix4x4 MakeRotateAxisAngle(const Vector3& axis, float angle){
 	result.m[2][1] = axis.y * axis.z * (1.0f - std::cos(angle)) - axis.x * std::sin(angle);
 	result.m[2][2] = std::powf(axis.z, 2) * (1.0f - std::cos(angle)) + std::cos(angle);
 
+	result.m[3][3] = 1;
+
 	return result;
 }
 
