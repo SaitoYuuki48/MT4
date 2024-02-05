@@ -128,10 +128,10 @@ Quaternion MakeRotateAxisAngleQuaternion(
 	Quaternion result;
 	float sin = std::sinf(angl / 2.0f);
 
-	result.w = std::cosf(angl / 2.0f);
 	result.x = sin * axis.x;
 	result.y = sin * axis.y;
 	result.z = sin * axis.z;
+	result.w = std::cosf(angl / 2.0f);
 
 	return result;
 }
