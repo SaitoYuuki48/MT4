@@ -2,6 +2,13 @@
 
 const char kWindowTitle[] = "LE2C_07_サイトウ_ユウキ_タイトル";
 
+struct Quaternion {
+	float x;
+	float y;
+	float z;
+	float w;
+};
+
 // Windowsアプリでのエントリーポイント(main関数)
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
